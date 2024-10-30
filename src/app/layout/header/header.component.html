@@ -1,5 +1,6 @@
-<nav>
-  <a (click)="scrollToSection('about')" >Sobre mí</a>
-  <a (click)="scrollToSection('experience')">Experiencia</a>
-  <a (click)="scrollToSection('skills')">Habilidades</a>
+<nav class="flex justify-center w-full mx-auto container py-6 divide-x">
+  <a class="text-xl hover:text-orange-600 cursor-pointer px-6" (click)="scrollToSection('experience')">EXPERIENCIA</a>
+  <a class="text-xl hover:text-orange-600 cursor-pointer px-6" (click)="scrollToSection('skills')">HABILIDADES</a>
+  <a class="text-xl hover:text-orange-600 cursor-pointer px-6" (click)="scrollToSection('about')">SOBRE MÍ</a>
+  <a class="text-xl hover:text-orange-600 cursor-pointer px-6">CONTACTO</a>
 </nav>
