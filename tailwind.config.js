@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ['Norse', 'ui-sans-serif', 'system-ui'],
       },
+      rotate: {
+        '19': '19deg',
+      }
     },
   },
   plugins: [],
