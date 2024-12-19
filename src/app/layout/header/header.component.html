@@ -1,6 +1,24 @@
-<nav class="flex justify-center w-full mx-auto container py-6 divide-x">
-  <a class="text-xl hover:text-orange-600 cursor-pointer px-6" (click)="scrollToSection('experience')">EXPERIENCIA</a>
-  <a class="text-xl hover:text-orange-600 cursor-pointer px-6" (click)="scrollToSection('skills')">HABILIDADES</a>
-  <a class="text-xl hover:text-orange-600 cursor-pointer px-6" (click)="scrollToSection('about')">SOBRE MÍ</a>
-  <a class="text-xl hover:text-orange-600 cursor-pointer px-6">CONTACTO</a>
-</nav>
+<header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto
+               mt-2">
+  <nav class="flex px-3 text-sm font-medium rounded-md text-white
+              justify-center items-center">
+    @for (item of navItems; track item)
+      {
+        @if (item.url.startsWith('mailto:'))
+          {
+            <a class="text-xl hover:text-orange-600 cursor-pointer p-2"
+            [href]="item.url" target="_blank" aria-label="item.label">
+            {{ item.title }}
+            </a>
+          } @else
+          {
+            <a class="text-xl hover:text-orange-600 cursor-pointer p-2"
+            (click)="scrollToSection(item.url)" aria-label="item.label"
+            [ngClass]="{ 'text-orange-600': selectedItem === item.url,
+                      'hover:text-orange-600': true}">
+            {{ item.title }}
+            </a>
+          }
+      }
+  </nav>
+</header>
