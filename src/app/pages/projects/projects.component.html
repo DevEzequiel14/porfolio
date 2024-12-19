@@ -1,0 +1,52 @@
+<div class="flex flex-col gap-y-16">
+  <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3">
+    <app-svg-icon [svgContent]="iconProject" [size]="{ width: 24, height: 24 }">
+    </app-svg-icon>
+    Proyectos
+  </h2>
+  @for (item of projects; track item)
+  {
+  <article class="flex flex-col space-x-0 space-y-8 group md:flex-row
+                  md:space-x-8 md:space-y-0">
+    <div class="w-full md:w-1/2">
+      <div
+        class="relative flex flex-col items-center col-span-6 row-span-5 gap-8
+               transition duration-500 ease-in-out transform shadow-xl
+               overflow-clip rounded-xl sm:rounded-xl
+               md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border
+               lg:border-gray-800 lg:hover:border-gray-700
+               lg:hover:bg-gray-800/50">
+        <img alt="Recién llegado vs 5 años en Nueva Zelanda"
+          class="object-cover object-top w-full h-56 transition duration-500
+                 sm:h-full md:scale-110 md:group-hover:scale-105"
+          src="{{ item.image }}" />
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 md:max-w-lg">
+      <h3 class="text-2xl font-bold text-orange-500">{{ item.title }}</h3>
+      <div class="flex flex-wrap mt-2">
+        <ul class="flex flex-row mb-2 gap-x-2">
+          @for (tag of item.tags; track tag) {
+          <li>
+            <span class="flex gap-x-2 rounded-full text-xs py-1 px-2 font-normal
+                         roboto-serif {{tag.class}}">{{ tag.name }}
+              <app-svg-icon [svgContent]="tag.icon" [view]="tag.viewBox"
+                            class="w-4">
+              </app-svg-icon>
+            </span>
+          </li>
+          }
+        </ul>
+        <div class="mt-2 text-pretty roboto-serif">{{ item.description }}</div>
+
+        <footer class="flex items-end justify-start mt-4 gap-x-4">
+          <app-link-button [href]="item.github" [text]="'Code'" target="_blank">
+          </app-link-button>
+          <app-link-button [href]="item.link" [text]="'Preview'" target="_blank">
+          </app-link-button>
+        </footer>
+      </div>
+    </div>
+  </article>
+  }
+</div>
