@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        'primary': '#112526',
+      },
       fontFamily: {
         sans: ['Norse', 'ui-sans-serif', 'system-ui'],
       },

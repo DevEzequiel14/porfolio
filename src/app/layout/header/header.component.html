@@ -1,18 +1,18 @@
 <header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto
                mt-2">
-  <nav class="flex px-3 text-sm font-medium rounded-md text-white
-              justify-center items-center">
+  <nav class="flex px-3 pb-1 font-medium text-white
+              justify-center items-center sm:text-base md:text-lg lg:text-xl">
     @for (item of navItems; track item)
       {
         @if (item.url.startsWith('mailto:'))
           {
-            <a class="text-xl hover:text-orange-600 cursor-pointer p-2"
+            <a class="hover:text-orange-600 cursor-pointer p-2"
             [href]="item.url" target="_blank" aria-label="item.label">
             {{ item.title }}
             </a>
           } @else
           {
-            <a class="text-xl hover:text-orange-600 cursor-pointer p-2"
+            <a class="hover:text-orange-600 cursor-pointer p-2"
             (click)="scrollToSection(item.url)" aria-label="item.label"
             [ngClass]="{ 'text-orange-600': selectedItem === item.url,
                       'hover:text-orange-600': true}">
