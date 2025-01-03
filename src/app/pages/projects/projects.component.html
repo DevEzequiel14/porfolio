@@ -6,7 +6,7 @@
   </h2>
   @for (item of projects; track item)
   {
-  <article class="flex flex-col space-x-0 space-y-8 group md:flex-row
+  <article class="flex flex-col space-x-0 space-y-8  md:flex-row
                   md:space-x-8 md:space-y-0">
     <div class="w-full md:w-1/2">
       <div
@@ -15,7 +15,7 @@
                overflow-clip rounded-xl sm:rounded-xl
                md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border
                lg:border-gray-800 lg:hover:border-gray-700
-               lg:hover:bg-gray-800/50">
+               lg:hover:bg-gray-800/50 group">
         <img alt="Recién llegado vs 5 años en Nueva Zelanda"
           class="object-cover object-top w-full h-56 transition duration-500
                  sm:h-full md:scale-110 md:group-hover:scale-105"
@@ -38,11 +38,12 @@
           }
         </ul>
         <div class="mt-2 text-pretty roboto-serif">{{ item.description }}</div>
-
         <footer class="flex items-end justify-start mt-4 gap-x-4">
-          <app-link-button [href]="item.github" [text]="'Code'" target="_blank">
+          <app-link-button [href]="item.github" [text]="'Code'"
+                           [icon]="iconGithub" target="_blank">
           </app-link-button>
-          <app-link-button [href]="item.link" [text]="'Preview'" target="_blank">
+          <app-link-button [href]="item.link" [text]="'Preview'"
+                           [icon]="iconPreview" target="_blank">
           </app-link-button>
         </footer>
       </div>
