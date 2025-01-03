@@ -7,7 +7,7 @@ import { SkillsComponent } from '../../pages/skills/skills.component';
 import { ProjectsComponent } from "../../pages/projects/projects.component";
 import { ScrollService } from '../../core/services/scroll.service';
 import { BadgeComponent } from '../../shared/components/badge/badge.component';
-import { SvgIconComponent } from '../../shared/components/svg-icon/svg-icon.component';
+import { LinkButtonComponent } from '../../shared/components/link-button/link-button.component';
 
 @Component({
   selector: 'app-main',
@@ -20,7 +20,7 @@ import { SvgIconComponent } from '../../shared/components/svg-icon/svg-icon.comp
     SkillsComponent,
     ProjectsComponent,
     BadgeComponent,
-    SvgIconComponent
+    LinkButtonComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'

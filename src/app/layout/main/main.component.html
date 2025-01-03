@@ -25,34 +25,14 @@
         Jujuy, Argentina 🇦🇷. Especializado en el desarrollo de aplicaciones web.
       </p>
       <nav class="flex flex-wrap gap-4 mt-8">
-        <a href="mailto:ezequielchorolque14@gmail.com" target="_blank"
-           class="group relative inline-flex items-center justify-center gap-2
-                  bg-gradient-to-b from-orange-700 to-red-800 text-md
-                 py-2 px-4 overflow-hidden transition-all
-                  duration-300 hover:text-orange-600">
-          <span class="absolute inset-0 bg-white transform scale-y-0
-                group-hover:scale-y-100 transition-transform duration-300
-                origin-bottom">
-          </span>
-          <span class="relative inline-flex items-center gap-2">
-            <app-svg-icon [svgContent]="iconContact" [size]="{ width: 24, height: 24 }">
-            </app-svg-icon>
-            Contáctame
-          </span>
-        </a>
-        <a href="https://www.linkedin.com/in/chorolque-ezequiel/" target="_blank"
-           class="group relative inline-flex items-center justify-center gap-2
-                  bg-gradient-to-b from-orange-700 to-red-800 text-md
-                text-white py-2 px-4 overflow-hidden transition-all
-                  duration-300 hover:text-orange-600">
-          <span class="absolute inset-0 bg-white transform scale-y-0
-                       group-hover:scale-y-100 transition-transform duration-300
-                       origin-bottom"></span>
-          <span class="relative inline-flex items-center gap-2">
-            <app-svg-icon [svgContent]="iconLinkedin" [size]="{ width: 24, height: 24 }">
-            </app-svg-icon>LinkedIn
-          </span>
-        </a>
+        <app-link-button href="mailto:ezequielchorolque14@gmail.com"
+                         [text]="'Contáctame'" [icon]="iconContact"
+                         target="_blank">
+        </app-link-button>
+        <app-link-button href="https://www.linkedin.com/in/chorolque-ezequiel/"
+                         [text]="'LinkedIn'" [icon]="iconLinkedin"
+                         target="_blank">
+        </app-link-button>
       </nav>
     </div>
   </div>
