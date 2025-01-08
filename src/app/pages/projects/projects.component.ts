@@ -55,14 +55,6 @@ export class ProjectsComponent {
       github: 'https://github.com/DevEzequiel14/ValorAr',
       image: '../../../assets/img/projects/valorAr.webp',
       tags: [this.tags.angular, this.tags.chartjs]
-    },
-    {
-      title: 'Plantilla Angular 17 Portfolio',
-      description: 'Plantilla Angular 17 Portfolio: Diseño profesional con experiencia, acerca de mí, y más.',
-      link: 'https://bejewelled-marzipan-abd81e.netlify.app/',
-      github: 'https://github.com/DevEzequiel14/personalProject',
-      image: '../../../assets/img/projects/plantilla.webp',
-      tags: [this.tags.angular, this.tags.tailwind]
     }
   ];
 }
