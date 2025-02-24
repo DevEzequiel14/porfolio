@@ -31,7 +31,7 @@ export class ExperienceComponent {
     {
       company: "Ministerio de Educación de Jujuy",
       role: "Desarrollador Frontend",
-      period: "03/2023 - 12/2024",
+      period: "03/2023 - Actualidad",
       description: [
         `Desarrollo de módulos y componentes reutilizables para el sistema de
         gestión institucional, utilizando Angular, Tailwind, y RxJS para la
