@@ -1,27 +1,40 @@
-# Porfolio
+# 💼 Portafolio Personal - Ezequiel Chorolque  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
+Bienvenido a mi portafolio web, donde muestro mi **experiencia, habilidades, proyectos y formas de contacto**. 🚀  
 
-## Development server
+## 🔗 Demo   
+https://porfolioezequielchorolque.netlify.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Tecnologías Utilizadas  
+- **Angular 17** - Framework principal  
+- **TypeScript** - Lenguaje de programación  
+- **Tailwind CSS** - Estilos modernos y responsivos  
+- **Netlify** - Despliegue automático  
 
-## Code scaffolding
+## 📸 Captura de Pantalla  
+![porfolio](https://github.com/user-attachments/assets/c5dfb299-b83d-4820-b27a-18583f561223)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación y uso
+1. Clona el respositorio
+   ```sh
+   git clone https://github.com/tuusuario/porfolio.git
+   cd porfolio
 
-## Build
+2. Instala dependencias
+   ```sh   
+   npm install
+    
+3. Ejecuta en modo desarrollo
+   ```sh
+   ng serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Abre en el navegador 
+   http://localhost:4200
 
-## Running unit tests
+📬 Contacto
+📩 ezequielchorolque14@gmail.com
+🌎 LinkedIn https://www.linkedin.com/in/chorolque-ezequiel/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🎨 Inspiración y Créditos  
+Este portafolio está basado en el tutorial [Cómo crear un Portfolio Web con Astro, HTML, CSS y TailwindCSS](https://www.youtube.com/watch?v=HEMvsJTBweY) de [Midulive](https://www.youtube.com/@midulive).  
+Lo desarrollé en **Angular 17**, modificando y adaptando funcionalidades según mis necesidades. ¡Gracias a Midulive por compartir su conocimiento! 🙌  
