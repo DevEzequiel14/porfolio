@@ -8,6 +8,7 @@ import { ProjectsComponent } from "../../pages/projects/projects.component";
 import { ScrollService } from '../../core/services/scroll.service';
 import { BadgeComponent } from '../../shared/components/badge/badge.component';
 import { LinkButtonComponent } from '../../shared/components/link-button/link-button.component';
+import { IntersectionObserverDirective } from '../../shared/directives/intersection-observer.directive';
 
 @Component({
   selector: 'app-main',
@@ -20,7 +21,8 @@ import { LinkButtonComponent } from '../../shared/components/link-button/link-bu
     SkillsComponent,
     ProjectsComponent,
     BadgeComponent,
-    LinkButtonComponent
+    LinkButtonComponent,
+    IntersectionObserverDirective
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
