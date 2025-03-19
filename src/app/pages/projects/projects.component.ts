@@ -44,6 +44,12 @@ export class ProjectsComponent {
       viewBox: '0 0 256 296',
       icon: `<path fill="#36A2EB" d="M248.572 148.807c-41.32.811-32.713 26.969-61.833 33.584-29.582 6.72-34.252-72.248-63.826-72.248-29.579 0-36.13 76.709-73.166 129.37l-1.057 1.491 79.404 45.836 120.478-69.551v-68.482Z"/><path fill="#FFCE56" d="M248.572 146.426c-13.832-17.752-23.214-38.16-43.4-38.16-35.72 0-26.32 58.271-65.798 58.271-39.482 0-43.633-62.679-88.358-3.759-14.252 18.774-25.723 39.707-34.734 59.515l111.812 64.549 120.478-69.551v-70.865Z"/><path fill="#FE6184" d="M7.613 170.564c13.555-37.538 19.405-67.94 45.283-67.94 39.478 0 48.875 110.908 82.718 99.625 33.838-11.278 30.077-71.432 82.719-71.432 10.02 0 20.25 6.138 30.241 16.067v70.405l-120.478 69.55L7.613 217.29v-46.725Z" opacity=".8"/><path fill="#E7E9ED" d="M128 295.56 0 221.673V73.89L128 0l128 73.89v147.78l-128 73.89ZM15.039 212.99 128 278.2l112.961-65.21V82.572L128 17.362 15.039 82.572V212.99Z"/>`
     },
+    bootstrap: {
+      name: 'Bootstrap',
+      class: 'bg-[#231336] text-white',
+      viewBox: '10 -30 256 296',
+      icon: `<path fill="#7E13F8" d="M53.172 0C38.565 0 27.756 12.785 28.24 26.65c.465 13.32-.139 30.573-4.482 44.642C19.402 85.402 12.034 94.34 0 95.488v12.956c12.034 1.148 19.402 10.086 23.758 24.197 4.343 14.069 4.947 31.32 4.482 44.641-.484 13.863 10.325 26.65 24.934 26.65h149.673c14.608 0 25.414-12.785 24.93-26.65-.464-13.32.139-30.572 4.482-44.641 4.359-14.11 11.707-23.05 23.741-24.197V95.488c-12.034-1.148-19.382-10.086-23.74-24.196-4.344-14.067-4.947-31.321-4.483-44.642C228.261 12.787 217.455 0 202.847 0H53.17h.002ZM173.56 125.533c0 19.092-14.24 30.67-37.872 30.67h-40.23a4.339 4.339 0 0 1-4.338-4.339V52.068a4.339 4.339 0 0 1 4.339-4.34h39.999c19.705 0 32.637 10.675 32.637 27.063 0 11.503-8.7 21.801-19.783 23.604v.601c15.089 1.655 25.248 12.104 25.248 26.537Zm-42.26-64.05h-22.937v32.4h19.32c14.934 0 23.17-6.014 23.17-16.764 0-10.073-7.082-15.636-19.552-15.636Zm-22.937 45.256v35.705h23.782c15.548 0 23.786-6.239 23.786-17.965 0-11.728-8.467-17.742-24.786-17.742h-22.782v.002Z"/>`
+    },
   }
 
   iconProject = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>`
@@ -55,6 +61,14 @@ export class ProjectsComponent {
       github: 'https://github.com/DevEzequiel14/ValorAr',
       image: '../../../assets/img/projects/valorAr.webp',
       tags: [this.tags.angular, this.tags.chartjs]
+    },
+    {
+      title: 'Quincho el tata',
+      description: 'Quincho El Tata es una landing page optimizada para la promoción y reserva de un quincho para eventos y festejos.',
+      link: 'https://quinchoeltata.netlify.app/',
+      github: 'https://github.com/DevEzequiel14/Quincho-El-Tata',
+      image: '../../../assets/img/projects/quinchoElTata.webp',
+      tags: [this.tags.angular, this.tags.bootstrap]
     }
   ];
 }
